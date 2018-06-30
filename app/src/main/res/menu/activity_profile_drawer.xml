@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/add_an_item"
+            android:icon="@drawable/add_an_item"
+            android:title="Add An Item To My List" />
+        <item
+            android:id="@+id/view_my_list"
+            android:icon="@drawable/view_my_list"
+            android:title="View My Items" />
+        <item
+            android:id="@+id/update_an_item"
+            android:icon="@drawable/update_an_item"
+            android:title="Update An Item" />
+        <item
+            android:id="@+id/delete_an_item"
+            android:icon="@drawable/delete_an_item"
+            android:title="Delete An Item" />
+        <item
+            android:id="@+id/location_on_map"
+            android:icon="@drawable/location_on_map"
+            android:title="Map" />
+    </group>
+
+    <item android:title="My Network">
+        <menu>
+            <!--<item-->
+                <!--android:id="@+id/view_notifications"-->
+                <!--android:icon="@drawable/view_notifications"-->
+                <!--android:title="View Notifications" />-->
+            <item
+                android:id="@+id/my_messenger"
+                android:icon="@drawable/my_messenger"
+                android:title="My Messenger" />
+        </menu>
+    </item>
+
+</menu>

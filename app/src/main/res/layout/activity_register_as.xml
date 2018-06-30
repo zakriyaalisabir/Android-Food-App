@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.zakriyaalisabir.f00dstore.RegisterAs">
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:textSize="20sp"
+                android:id="@+id/registerAsSeller"
+                android:text="Register As Seller"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"/>
+            <Button
+                android:textSize="20sp"
+                android:layout_marginBottom="10dp"
+                android:id="@+id/registerAsBuyer"
+                android:text="Register As Buyer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"/>
+            <Button
+                android:textSize="20sp"
+                android:id="@+id/registerAsDeliverer"
+                android:text="Register As Deliverer"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

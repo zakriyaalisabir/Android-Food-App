@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/chat_background"
+    tools:context="com.zakriyaalisabir.f00dstore.contactsActivity">
+
+
+    <TextView
+        android:padding="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="My Contacts"
+        android:textSize="25sp"
+        android:layout_margin="10dp"
+        android:background="@drawable/round_button"
+        android:gravity="center"
+        android:textColor="#ffffff"
+        android:id="@+id/tvTitleViewItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:transcriptMode="alwaysScroll"
+        android:layout_below="@+id/tvTitleViewItems"
+        android:id="@+id/myListViewContacts"
+        android:scrollbarStyle="outsideOverlay"
+        android:layout_width="match_parent"
+        android:dividerHeight="1dp"
+        android:divider="#ffffff"
+        android:layout_height="match_parent"/>
+
+</RelativeLayout>

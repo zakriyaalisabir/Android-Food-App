@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.zakriyaalisabir.f00dstore.Login">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_marginBottom="30dp"
+        android:background="#58ba47"
+        android:layout_above="@+id/tiL1Login"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/healthy_eating"/>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content"
+        android:id="@+id/tiL1Login"
+        >
+
+        <EditText
+            android:id="@+id/etEmailLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Email Address"
+            android:textSize="15sp"
+            android:inputType="textEmailAddress"
+            android:singleLine="true"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:id="@+id/tiL2Login"
+        android:layout_below="@+id/tiL1Login"
+        >
+        <EditText
+            android:inputType="textPassword"
+            android:id="@+id/etPasswordLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"
+            android:textSize="15sp"
+            android:singleLine="true"
+            />
+
+    </android.support.design.widget.TextInputLayout>
+
+    <Button
+        android:textSize="20sp"
+        android:id="@+id/btnLogin"
+        android:text="Login"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/tiL2Login"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_button"/>
+    <Button
+        android:textSize="20sp"
+        android:text="REGISTER"
+        android:id="@+id/btnRegister"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/round_button"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnLogin"/>
+    <TextView
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="10sp"
+        android:id="@+id/tvForgetPassword"
+        android:clickable="true"
+        android:text="Forget Password"/>
+
+</RelativeLayout>

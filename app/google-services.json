@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "135677030778",
+    "firebase_url": "https://foodstorebyzakriyaalisab-6e849.firebaseio.com",
+    "project_id": "foodstorebyzakriyaalisab-6e849",
+    "storage_bucket": "foodstorebyzakriyaalisab-6e849.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:135677030778:android:3e6beb72c8aa5a31",
+        "android_client_info": {
+          "package_name": "com.zakriyaalisabir.f00dstore"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "135677030778-rv48ui02a1d0jq9b4ejsv4c71lvfotjl.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.zakriyaalisabir.f00dstore",
+            "certificate_hash": "fc97e5b5ec1e693bea4eeb2a1fe548b0324b9ba6"
+          }
+        },
+        {
+          "client_id": "135677030778-604vdnv6c3alg9tfuej1iao5kt1isa91.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCRWtC1HaXqXI0EQ_zx03KC0pbT3U5XIUo"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "135677030778-604vdnv6c3alg9tfuej1iao5kt1isa91.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

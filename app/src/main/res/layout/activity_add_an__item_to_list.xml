@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:layout_height="match_parent"
+    tools:context="com.zakriyaalisabir.f00dstore.AddAn_ItemToList">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:background="@drawable/round_button"
+            android:padding="20dp"
+            android:id="@+id/imgAddAnItem"
+            android:layout_centerHorizontal="true"
+            android:clickable="true"
+            android:src="@drawable/add_an_item"
+            android:layout_width="200dp"
+            android:layout_height="200dp" />
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiL1AddAnItem"
+            android:layout_below="@+id/imgAddAnItem"
+            >
+            <EditText
+                android:inputType="text"
+                android:id="@+id/etProductNameAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Name"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiL2AddAnItem"
+            android:layout_below="@+id/tiL1AddAnItem"
+            >
+            <EditText
+                android:inputType="number"
+                android:id="@+id/etProductPriceAdd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Product Price Per Item"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_margin="40dp"
+            android:textSize="20sp"
+            android:id="@+id/btnAddAnItem"
+            android:text="Add"
+            android:layout_below="@+id/tiL2AddAnItem"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

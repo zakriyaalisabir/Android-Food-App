@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context="com.zakriyaalisabir.f00dstore.AfterLogin">
+
+
+
+    <RelativeLayout
+        android:layout_centerInParent="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/person_icon"
+            android:layout_width="100dp"
+            android:id="@+id/img"
+            android:layout_height="100dp" />
+
+        <TextView
+            android:layout_below="@+id/img"
+            android:id="@+id/name"
+            android:gravity="center"
+            android:text="Name"
+            android:textSize="25sp"
+            android:textColor="#58b947"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:layout_below="@+id/name"
+            android:id="@+id/email"
+            android:gravity="center"
+            android:text="email@server.com"
+            android:textSize="25sp"
+            android:textColor="#58b947"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/email"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <Button
+                android:textSize="20sp"
+                android:id="@+id/btnLocationOnMap"
+                android:text="Map"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"/>
+
+            <Button
+                android:textSize="20sp"
+                android:id="@+id/btnMyMessenger"
+                android:text="Messenger"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"/>
+
+            <Button
+                android:layout_marginRight="90dp"
+                android:layout_marginLeft="90dp"
+                android:layout_marginTop="100dp"
+                android:textSize="20sp"
+                android:id="@+id/btnLogout"
+                android:text="Logout"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@drawable/round_button"/>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

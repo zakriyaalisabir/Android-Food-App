@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp"
+    android:background="#fdfdfe"
+    android:layout_height="match_parent"
+    tools:context="com.zakriyaalisabir.f00dstore.Register">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_height="wrap_content">
+
+
+        <ImageView
+            android:layout_centerHorizontal="true"
+            android:layout_width="100dp"
+            android:id="@+id/imgPersonLogo"
+            android:layout_height="100dp"
+            android:src="@drawable/person_icon"/>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiL1Register"
+            android:layout_below="@+id/imgPersonLogo"
+            >
+            <EditText
+                android:inputType="textPersonName"
+                android:id="@+id/etNameRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Name"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiL2Register"
+            android:layout_below="@+id/tiL1Register"
+            >
+            <EditText
+                android:inputType="textEmailAddress"
+                android:id="@+id/etEmailRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Email"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:passwordToggleEnabled="true"
+            android:id="@+id/tiL3Register"
+            android:layout_below="@+id/tiL2Register"
+            >
+            <EditText
+                android:inputType="textPassword"
+                android:id="@+id/etPasswordRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Password"
+                android:password="true"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/tiL6Register"
+            android:layout_below="@+id/tiL3Register"
+            >
+            <EditText
+                android:inputType="text"
+                android:id="@+id/etTitleRegister"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Brand/Shop Title"
+                android:textSize="15sp"
+                android:singleLine="true"
+                />
+
+        </android.support.design.widget.TextInputLayout>
+
+        <Button
+            android:layout_marginTop="20dp"
+            android:textSize="20sp"
+            android:id="@+id/btnSubmitRegister"
+            android:text="Submit"
+            android:layout_below="@+id/tiL6Register"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/round_button"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
